@@ -65,7 +65,7 @@ public class ItemTest {
         response = given()
                 .auth()
                 .preemptive()
-                .basic("api2024@2024.com","12345")
+                .basic("tareapostman@tarea.com","Hola1234")
                 .log().all()
                 .when()
                 .delete("https://todo.ly/api/items/"+id+".json");
