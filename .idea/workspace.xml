@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f842db1c-3dcc-4eae-90ed-c7b8fed8a743" name="Changes" comment="Commit pero falla el Delete" />
+    <list default="true" id="f842db1c-3dcc-4eae-90ed-c7b8fed8a743" name="Changes" comment="Commit sin fallo en el Delete (error de cuenta)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basicRestAssured/ItemTestToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/basicRestAssured/JsonSchemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/ApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/ApiConfigUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/FactoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/IRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/RequestDELETE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/RequestGET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/RequestInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/RequestPOST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factoryRequest/RequestPUT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/BasicAuthTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/BasicAuthTestBaseUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/CRUDProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/CRUDUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/CreateProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testSuite/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/expectedResult1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/expectedResult2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,29 +77,116 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CreateProjectTest.executor": "Run",
-    "Gradle.CreateProjectTest.verifyCreateProject.executor": "Run",
-    "Gradle.CreateProjectTest.verifyCreateProjectExternalFile.executor": "Run",
-    "Gradle.CreateProjectTest2.executor": "Run",
-    "Gradle.ItemTest.executor": "Run",
-    "Gradle.ItemTest.verifyCRUDProject.executor": "Debug",
-    "Gradle.ProjectTest.executor": "Run",
-    "Gradle.SegundoProyectoQA [dependencies].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CRUDProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CRUDUserTest.createProject.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CRUDUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateProjectTest.verifyCreateProject.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateProjectTest.verifyCreateProjectExternalFile.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateProjectTest2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemTest.verifyCRUDProject.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ItemTestToken.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ItemTestToken.verifyCRUDProject.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JsonSchemaTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SegundoProyectoQA [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.ItemTest">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config" />
+      <recent name="testSuite" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CRUDUserTest">
+    <configuration name="CRUDProjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;testSuite.CRUDProjectTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CRUDUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;testSuite.CRUDUserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CRUDUserTest.createProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;testSuite.CRUDUserTest.createProject&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="CreateProjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -90,7 +200,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basicRestAssured.CreateProjectTest&quot;" />
+            <option value="&quot;testSuite.CreateProjectTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -101,7 +211,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateProjectTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -114,79 +224,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;basicRestAssured.CreateProjectTest2&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CreateProjectTest.verifyCreateProjectExternalFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;basicRestAssured.CreateProjectTest.verifyCreateProjectExternalFile&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ItemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;basicRestAssured.ItemTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;basicRestAssured.ProjectTest&quot;" />
+            <option value="&quot;testSuite.UserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,10 +237,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ItemTest" />
-        <item itemvalue="Gradle.ProjectTest" />
-        <item itemvalue="Gradle.CreateProjectTest2" />
-        <item itemvalue="Gradle.CreateProjectTest.verifyCreateProjectExternalFile" />
+        <item itemvalue="Gradle.CRUDUserTest" />
+        <item itemvalue="Gradle.UserTest" />
+        <item itemvalue="Gradle.CRUDUserTest.createProject" />
+        <item itemvalue="Gradle.CRUDProjectTest" />
         <item itemvalue="Gradle.CreateProjectTest" />
       </list>
     </recent_temporary>
@@ -226,7 +264,12 @@
       <workItem from="1728010783803" duration="1007000" />
       <workItem from="1728263406045" duration="972000" />
       <workItem from="1728508853936" duration="3923000" />
-      <workItem from="1728584587111" duration="2529000" />
+      <workItem from="1728584587111" duration="2686000" />
+      <workItem from="1728594451370" duration="5322000" />
+      <workItem from="1728600060824" duration="10000" />
+      <workItem from="1728679329950" duration="6731000" />
+      <workItem from="1728938770320" duration="678000" />
+      <workItem from="1729710273062" duration="2604000" />
     </task>
     <task id="LOCAL-00001" summary="Commit pero falla el Delete">
       <option name="closed" value="true" />
@@ -236,14 +279,42 @@
       <option name="project" value="LOCAL" />
       <updated>1728590322762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit pero falla el Delete">
+      <option name="closed" value="true" />
+      <created>1728590366734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728590366734</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit sin fallo en el Delete (error de cuenta)">
+      <option name="closed" value="true" />
+      <created>1728598083940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728598083940</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit pero falla el Delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit pero falla el Delete" />
+    <MESSAGE value="Commit sin fallo en el Delete (error de cuenta)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit sin fallo en el Delete (error de cuenta)" />
   </component>
 </project>
